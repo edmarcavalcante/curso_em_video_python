@@ -1,6 +1,4 @@
 from classe_poligono import Poligono
-from abc import ABC 
-from abc import abstractmethod
 
 #Quadrado(Poligono)
 #-Comprimento_lado
