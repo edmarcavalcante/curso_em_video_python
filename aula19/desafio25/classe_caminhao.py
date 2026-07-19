@@ -4,6 +4,7 @@ from rich.panel import Panel
 from rich.style import Style
 from rich.theme import Theme
 from rich.console import Console
+import time
 
 estilo = Style(color="red",bgcolor="white",bold=True,italic=True)
 
@@ -26,8 +27,22 @@ class Caminhao(Transporte):
         console.rule("[bold red]Frete de Caminhão")
         
         if self.distancia < 50:
+            
             print("\n"*3)
+
+
             print(f"Frete para caminhão apenas para distâncias maiores que 50 km")
+            console.print(f"Você escolheu: ",end="")
+            seta = ">"
+            for i in range(1,4):
+
+                console.print(f'[italic bright_green]{seta}[/italic bright_green]',end="")
+                time.sleep(1)
+
+            console.print(f' [italic bright_green]{self.distancia}[/italic bright_green]')
+            time.sleep(1)    
+
+
             print("\n"*3)
 
         else:

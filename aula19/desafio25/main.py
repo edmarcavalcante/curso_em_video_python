@@ -13,7 +13,7 @@ def main():
     m1 = Moto(50,9.5)
     m1.calc_frete()
 
-    c1 = Caminhao(50,9.5)
+    c1 = Caminhao(5,9.5)
     c1.calc_frete()
 
 if __name__=="__main__":
