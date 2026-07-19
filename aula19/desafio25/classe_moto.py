@@ -26,3 +26,5 @@ class Moto(Transporte):
         print("\n"*5)
         console.print(f'O frete custa [logging.level.critical]R$ {self.frete}[/logging.level.critical] por Km. A distância é [logging.level.critical]{self.distancia}[/logging.level.critical] e o fator é [logging.level.critical]{self.fator}[/logging.level.critical]. Logo o custo do frete de moto fica => [logging.level.critical]R$ {self.distancia*self.frete*self.fator}[/logging.level.critical] ')    
         print("\n"*3)
+
+        return self.distancia*self.frete*self.fator
