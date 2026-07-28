@@ -8,14 +8,15 @@ def main():
     av1.set_nota(50)
     av1.set_nota(-1)
     av1.get_nota()
-    av1.set_nota(9.5)
+    av1.set_nota(9.5)#esse técnica de atribuição foi viabilizada pelo método setter()
     av1.get_nota()
+    print('='*50)
 
     av2 = Avaliacao2("Maria", "Pintura", 10)
     av2.nota = 5
     print(av2.nota)
     inspect(av2, private=True)
-    av2.nota = 8
+    av2.nota = 8 #esse técnica de atribuição foi viabilizada pelo atributo criado pelo @property
     print(av2.nota)
     inspect(av2, private=True)
     av2.nota = 11
