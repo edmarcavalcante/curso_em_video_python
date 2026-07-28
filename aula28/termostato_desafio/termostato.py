@@ -24,8 +24,12 @@ class Termostato:
             print("Valor inválido")
 
 
+    def aumentar(self):
+        nova_temperatura = self.valor + 0.5
+        self.valor = nova_temperatura
+        return self.valor
+
     
-    def aumentar (self):
-        
-        self._temperatura += 0.5 
-        
+
+
+
