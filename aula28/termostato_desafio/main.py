@@ -1,5 +1,7 @@
 from termostato import Termostato
 from property_RealPython import Circle
+from validating_input import Point
+
 
 def main():
     t1 = Termostato()
@@ -26,6 +28,14 @@ def main():
     c1.radius
     #del c1
     print(c1.radius)
+
+    print("="*30 + "Point Class" + "="*30)
+
+    p1 = Point(20, 15)
+    p1.x
+    p1.y
+    p1.x = 10
+    p1.x
     
 
 if __name__ == "__main__":
